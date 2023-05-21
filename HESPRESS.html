@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+body {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+.bg{
+	  background:blue;
+}
+.nav{
+  width:90%;
+  height:60px;
+
+  overflow:hidden;
+  position:relative;
+  display:fixed;
+  top:0px;margin:0 auto
+	
+}
+
+.h-logo {
+  position:relative;
+  width:120px; 
+  float:right;
+  box-sizing:border-box;
+top:calc(50% - 13px);
+  margin-right:5px;
+}
+.h-logo img {
+  width:100%;
+  height:auto;
+  border-radius:20px;
+}
+
+.fr-logo {
+position:relative;
+left:calc(1% + 28px);
+height:20px;
+ width:20px;
+float:left;
+top:calc(50% - 11px);
+ 
+}
+.fr-logo img{
+  width:100%;
+  height:auto;
+}
+.mode-night {
+  position:absolute;
+   left:1% ;
+   top:calc(50% - 11px);
+
+}
+.mode-night i {
+  font-size:20px;
+  color:white;
+    
+}
+.conbg {
+	  background:lightgray;
+
+}
+.container {
+  position:relative;
+  width:90%;
+  height:40px;
+   display:fixed;
+   overflow:hidden;margin:0 auto
+}
+
+
+.container ul {
+  position:relative;
+  font-family:"DIN Next LT Arabic Light" ;
+font-weight:bold;
+  font-size:18px;
+  margin:0px 5px 15px 0px;
+  letter-spacing:-0.4px;
+  word-spacing:-1px;
+    display:inline;
+ word-spacing:5px;
+
+}
+.content {
+  width:810px;
+  height:35px;
+  float:right;
+  top: calc(50% - 12px);
+  position:relative;
+  margin-bottom:15px:
+}
+li {
+  
+list-style-type:none;
+  display:inline; 
+}
+
+li a {
+  text-decoration:none;
+  color:black;  
+}
+
+.navicons {
+  left:1%;
+  top: calc(50% - 10px);
+   float:left;
+ display:block;
+  position:relative
+}
+.navicons i {
+  font-size:18px;
+   margin:0px 0px 15px 5px;
+}
+
+.navig {
+  position:relative;
+  right:8px;
+  margin-left:10px;
+   top: calc(50% - 14px);
+   width:25px;
+  height:auto;
+  display:inline;
+ float:right
+   
+}
+.navig img {
+  position:relative;
+   width:100%;
+   height:auto;
+}
+.secondisplay {
+position:relative;
+   top:20px;
+   width:90%;
+   height:640px;
+   box-sizing:border-box;
+   padding:5px;
+   text-align:center;
+   font-family:"DIN Next LT Arabic Medium";
+   font-size:14px;
+   letter-spacing:-0.5px;
+	margin:0 auto;
+	 display:flex;
+	
+	
+}
+
+.fscript {
+   margin-right:5px;
+position:inherit;
+	width:300px;
+margin-left :auto
+}
+.fscript h  {
+   float:right;
+   font-size:17px;
+   font-weight:bold;
+	direction:rtl;
+	color:blue;
+	border:2px;
+	border-style:none none solid ;
+	padding-bottom:2px;
+
+}
+
+.fscript ul{
+	clear:right;
+  	min-width:210px;
+  padding:5px;
+  text-align:justify;
+  direction : rtl;
+  overflow-y:scroll;
+  height:530px;
+	position:relative;
+	
+}
+.fscript ul::-webkit-scrollbar {
+    width: 10px;
+	background-color:lightgray
+}
+.fscript ul::-webkit-scrollbar-button {
+    background-color:blue }
+
+.fscript ul ::-webkit-scrollbar-thumb {
+    background: yellow;
+	
+}
+.fscript ul li {
+  display:block ;
+  line-height:27px ;
+  font-size :14px ;
+	display:-webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+		overflow:hidden;
+	
+
+}
+.fscript a:first-child {
+  margin-left: 5px;
+  color:blue;
+}
+.fscript a:nth-child(2) {
+
+	
+}
+.slidshow {
+	margin:0 10px;
+	display:inline-block;
+	min-width:500px;
+	
+}
+.slidshow img {
+   width:100%;
+   height:auto;  
+
+}
+.slidshow h {
+   display:block;
+	font-size:20px;
+	margin-bottom:5px;
+	 display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+	direction:rtl;
+	overflow:hidden
+}
+
+
+.script {
+   min-width:220px;
+	max-width:290px;
+position:relative;
+	height:530px;
+	margin-right :auto
+}
+
+.script p {
+   clear:right;
+   text-align:justify;
+   background:#C8EDF9;
+   padding:4px;
+   overflow:hidden;
+   height:46%;
+    line-height:25px;
+      display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+   direction:rtl;
+	font-size:14px
+   
+   
+}
+
+
+.script h {
+   margin-left:0px;
+   float:right;
+   font-size:17px;
+   font-family:"DIN Next LT Arabic Heavy";
+   letter-spacing:0.5px;
+   font-weight:bold;
+   color:#360B98;
+   border : 2px ;
+   border-style:none none solid ;
+   padding-bottom: 4px ;
+	
+}
+
+.thirddisplay {
+	width:90%;
+	height:auto;
+	position:relative;
+	margin:0 auto;
+
+}
+.fembeded {
+	width:100%;
+	display:grid;
+	grid-template-columns:auto auto auto auto ;
+	grid-gap:15px
+}
+.fembeded div  {
+	width:100%;
+}
+
+
+.thirddisplay > a {
+	float:right;
+	text-decoration:none;
+	padding:0px 0px 10px;
+	font-family:"DIN Next LT Arabic Medium";
+	font-weight:bold;
+	font-size:19px ;
+	border-width:3px;
+	border-style:none none solid;
+}
+
+.sembeded {
+	width:100%;
+	height:auto;
+	display:grid;
+	grid-template-columns:auto auto auto auto ;
+	grid-gap:15px;
+	background:#CAF0F8;
+	padding:10px;
+	box-sizing:border-box;
+	border-width:1px;
+	border-style:solid none none ;
+}
+.sembeded div {
+	position:relative;
+	width:100%;
+	height:100%;
+	
+}
+.sembeded div img {
+	position:relative;
+	width:100%;
+	height:100%;
+	
+}
+
+.sembeded  a {
+	text-decoration:none;
+	font-family:"DIN Next LT Arabic Medium";
+	font-weight:bold;
+	font-size:100% ;
+	position:absolute;
+	z-index:1;
+	width:100%;
+	height:100%;
+	color:white;
+	overflow:hidden
+	
+}
+.sembeded  a p {
+	position:relative;
+	top:80%;
+padding:4px;
+margin:0px;
+	DIRECTION:RTL;
+	right:3%;
+	display : -webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+	
+}
+
+.forthdisplay {
+	position:relative;
+	width:90%;
+	height:auto;
+	padding:10px 0px;
+	box-sizing:border-box;
+	margin:0 auto;
+	font-family:"DIN Next LT Arabic light";
+   grid-gap:14px;
+	justify-content:space-between;
+		 display:flex;
+
+}
+
+.forthdisplay .fitems  {
+width:100%;
+
+}
+.forthdisplay .thtems  {
+width:100%
+}
+
+.forthdisplay .fitems img {
+	border:2px;
+	border-style:solid none none none;
+		box-sizing:border-box;
+	clear:left;
+		padding-top:10px;
+}
+
+.forthdisplay .fitems h2 {
+
+	float:right;
+padding:0px}
+
+.forthdisplay .thtems img {
+	border:2px;
+	border-style:solid none none none;
+		box-sizing:border-box;
+	padding-top:10px;
+	
+
+}
+
+.forthdisplay .thtems h2 {
+direction:rtl}
+
+.forthdisplay .thtems {
+float:right}
+
+
+
+
+
+.cont {
+direction:rtl;
+	max-width:900px;
+	margin:auto;
+	height:100%
+	}
+
+
+
+.cont .grid {
+	border:2px;
+	border-style:solid none none;
+	padding:10px 0px;
+
+}
+
+
+.cont .grid .lala {
+		display:flex;
+	align-items:center;
+
+}
+
+.cont .grid .lala .lefind {
+min-width:300px;
+	height:155px;
+	overflow:hidden;
+margin-right:7px
+
+}
+
+.cont .grid .lala   {
+	overflow:hidden;
+}
+.cont .grid .lala > div   {
+	margin:auto;
+	box-sizing:border-box;
+min-width:50px
+}
+
+
+.cont .grid .lala  img {
+	border-radius:120%;
+	max-width:100%;
+	max-height:100%;
+
+}
+
+
+
+footer .flast {
+	width:100%;
+	background:#4D5A85;
+	height:250px;
+	display:flex;
+	direction:rtl;
+text-align:center;
+}
+
+
+footer .flast > div{
+	width:100%;
+	margin:auto;
+	height:60%
+
+	
+
+}
+
+footer .flast  div .last{
+	display:flex;
+	width:70%;
+justify-content:center;
+	margin:auto;
+	box-sizing:border-box
+}
+
+
+footer .slast {
+	width:100%;
+	background:#1e22b4;
+	height:400px;
+	display:flex;
+	direction:rtl;
+	align-items:center
+}
+
+
+
+footer .slast .rlast{
+	width:40%;
+	height:50%;
+	justify-content:space-around;
+		display:flex;
+}
+
+footer .slast .tlast{
+	width:45%;
+	align-items:center;
+	display:flex;
+	flex-direction:column;
+  height:200px
+}
+
+footer .slast .jlast{
+	width:55%;
+	height:100%;
+	padding:20px;
+	box-sizing:border-box;
+	font-family:"DIN Next LT Arabic medium";
+	font-size:15px;
+	color:white;
+		display:flex;
+margin-right:20px;
+	letter-spacing:2px
+}
+	
+	
+
+
+footer .slast li{
+list-style-type:none;
+	display:block;
+	padding-bottom:10px
+	
+}
+
+
+
+
+footer .slast .tlast .savicons {
+list-style-type:none;
+	padding-bottom:10px;
+	font-size:30px;
+	margin-top:10px;
+	color:white;
+	width:40%;
+	display:flex;
+	justify-content:space-between;
+	
+
+	
+}
+
+
+input[type= submit]{
+	width:90px;
+	height:35px;
+	border-radius:5px;
+	margin:10px 0px 10px 0px;
+	padding:10px;
+			background:none;
+	color:white
+
+} 
+
+
+input[type= email],input[type= password] {
+	width:250px;
+	height:35px;
+	border-radius:5px;
+	margin:10px 0px 10px 0px;
+	padding:0px 0px 0px 40px;
+	 background-image: url('search.png');
+background-repeat:no-repeat;
+	background-position:2px 2px;
+	box-sizing:border-box;
+	background-size:auto 90%
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<!DOCTYPE html>
+
+<html>
+ <head>
+   <title>
+     Hespress - هسبريس جريدة إلكترونية مغربية
+   </title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+   <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/91808a314e.js" crossorigin="anonymous"></script>
+ </head> 
+  <body>
+     <div>
+    <div class="bg">
+    <div class="nav">
+      <div class="mode-night" ><a ><i class="far fa-moon"></i></a></div>
+      <div class="fr-logo"><a><img  rel="fr" src="fr-icon.SVG"></a>
+      </div>
+      <div class="h-logo" ><a ><img rel="HESPRESS" src="logo.SVG">         </a></div>
+      </div>
+      </div>
+		  <div class='conbg'>
+    <div class='container'>
+      <div class='content'>
+      <div class="navig">
+        <img src="BAR.svg" >
+      </div>
+      <ul>
+        <li><a href="">الرئيسية</a></li>
+        <li><a href="">سياسة</a></li>
+        <li><a href="">مجتمع</a></li>
+        <li><a href="">اقتصاد</a></li>
+        <li><a href="">حوادث</a></li>
+        <li><a href="">السلطة الرابعة</a></li>
+        <li><a href="">تمازيغت</a></li>
+        <li><a href="">فن وثقافة</a></li>
+        <li><a href="">رياضة</a></li>
+        <li><a href="">صوت وصورة</a></li>
+        <li><a href="">خارج الحدود</a></li> 
+        </ul>
+        </div>
+      <div class="navicons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fas fa-search"></i>
+      </div>
+   </div>
+     </div> 
+           </div>
+
+    <div class="secondisplay">
+		  <div class="script" >
+                <a><h>مصدر مطلع</h></a>
+                <a><p>
+غنى العملاق جورج وسوف أغنية "طبيب جراح" وكررتها بعده الأجيال، قائلا: "طبيب جراح قلوب الناس أداويها/وياما جراح سهرت الليل أداريها، شافوني قالوا متهني، من كثر الفرح بيغني، تعالوا واسألوا عني، أنا اللي بيّ جراح أطباء الكون ما تشفيني وبعيدا عن لغة الرومانسية، يقول المغاربة: "ما قدهم فيل زادوهم فيلة"، وهي جملة تختصر حال الأطباء الوطنيين هذه الأيام. لا أحد ينكر دور الطبيبات والأطباء المغاربة عندما تحولوا في عز أزمة "كوفيد-19" إلى جنود في الصفوف الأولى عند خط المواجهة، بل إن الكلمات لا يمكن أن تسعف أي أحد للتعبير عن حجم الأسف لفقدان أطر كان ذنبهم الوحيد هو "جهادهم" من أجل </p></a>
+                <a><h>مصدر مطلع</h></a>
+                <a><p>
+بالأمس: قال الملك العظيم الراحل الحسن الثاني: "إن العرب لن يتمكنوا أبدا من إيجاد حل أو تسوية المشكل؛ لأن إسرائيل دولة لا يمكن أن تختفي. لو كنت مكانهم لاعترفت بإسرائيل، وأدمجتها في حظيرة الجامعة العربية". الخميس 22 يوليوز 2021: دخلت إسرائيل إلى الاتحاد الإفريقي، (وهو أكبر من الجامعة العربية)، من بابه الواسع، بعد أن حصلت على صفة "مراقب"؛ ولكن ذلك لا يعني، بأي حال من الأحوال، أنها عضو أقل أهمية من الآخرين.. هل نتصور، مثلا، أن "البوليساريو" ستكون أعلى صوتا من إسرائيل؟ هل نتصور أن دولة مثل الجزائر، التي صوت برلمانها على قانون يجرم التطبيع، قد تجرؤ على الإدلاء بمداخلة </p></a>
+                
+       </div>
+		 <div class="slidshow">
+          <div class="mySlides">
+   <h>"رصيف الصحافة: الملك محمد السادس يلقي خطاب العرش من مدينة تطوان"</h><img  src="Ait-Taleb-et-la-version-delta-du-virus.jpg">
+			 </div>
+			 
+          <div class="mySlides" ><h>"رصيف الصحافة: الملك محمد السادس يلقي خطاب العرش من مدينة تطوان"</h><img src="AYOUCHCANNES.jpg">
+             </div>
+			 
+          <div  class="mySlides" >
+          <h>"رصيف الصحافة: الملك محمد السادس يلقي خطاب العرش من مدينة تطوان"</h><img  src="chennaka-et-prix-des-moutons-Hes.jpg">
+             </div>
+			 
+          <div class="mySlides" >
+<h>"رصيف الصحافة: الملك محمد السادس يلقي خطاب العرش من مدينة تطوان"</h><img src="corona.jpg">
+             </div>
+			 
+          <div class="mySlides" > <h>"رصيف الصحافة: الملك محمد السادس يلقي خطاب العرش من مدينة تطوان"</h><img src="maroc-pratique-religieux.jpg"> </div>
+      </div>
+       <div class="fscript" >
+          <h>  24 ساعة</h>
+          <ul>
+                <li>
+                <a href=""> 11:20</a><a href=""> أطباء يعتصمون أمام مديرية الصحة بجهة فاس</a></li>
+                <li><a href=""> 11:45</a><a href=""> الأهلي يحرز  "أبطال إفريقيا" للمرة العاشرة </a></li>
+                <li><a href=""> 12:01</a><a href=""> تهيئة منتزه عين أسردون تتواصل بجهة بني ملال </a></li>
+                <li><a href=""> 01.15</a><a href="">المغرب يوسع فئة ملقحي كورونا بين 30 و 34 سنة  </a></li>
+                <li><a href=""> 04.28</a><a href=""> عامر يحتفي بتألق مخرجين مغربيين في "هوليوود"</a></li>
+      <li><a href=""> 11:45</a><a href=""> الأهلي يحرز لقب "أبطال إفريقيا" للمرة العاشرة </a></li>
+                <li><a href=""> 12:01</a><a href=""> تهيئة منتزه عين أسردون تتواصل بجهة بني ملال </a></li>
+                <li><a href=""> 01.15</a><a href="">المغرب يوسع فئة ملقحي كورونا بين 30 و 34 سنة  </a></li>
+                <li><a href=""> 04.28</a><a href=""> عامر يحتفي بتألق مخرجين مغربيين في "هوليوود"</a></li>
+      <li><a href=""> 11:45</a><a href=""> الأهلي يحرز لقب "أبطال إفريقيا" للمرة العاشرة </a></li>
+                <li><a href=""> 12:01</a><a href=""> تهيئة منتزه عين أسردون تتواصل بجهة بني ملال </a></li>
+                <li><a href=""> 01.15</a><a href="">المغرب يوسع فئة ملقحي كورونا بين 30 و 34 سنة  </a></li>
+                <li><a href=""> 04.28</a><a href=""> عامر يحتفي بتألق مخرجين مغربيين في "هوليوود"</a></li>
+      <li><a href=""> 11:45</a><a href=""> الأهلي يحرز لقب "أبطال إفريقيا" للمرة العاشرة </a></li>
+                <li><a href=""> 12:01</a><a href=""> تهيئة منتزه عين أسردون تتواصل بجهة بني ملال </a></li>
+                <li><a href=""> 01.15</a><a href="">المغرب يوسع فئة ملقحي كورونا بين 30 و 34 سنة  </a></li>
+                <li><a href=""> 04.28</a><a href=""> عامر يحتفي بتألق مخرجين مغربيين في "هوليوود"</a></li><li><a href=""> 11:45</a><a href=""> الأهلي يحرز لقب "أبطال إفريقيا" للمرة العاشرة </a></li>
+                <li><a href=""> 12:01</a><a href=""> تهيئة منتزه عين أسردون تتواصل بجهة بني ملال </a></li>
+                <li><a href=""> 01.15</a><a href="">المغرب يوسع فئة ملقحي كورونا بين 30 و 34 سنة  </a></li>
+                <li><a href=""> 04.28</a><a href=""> عامر يحتفي بتألق مخرجين مغربيين في "هوليوود"</a></li>
+                </ul>
+      </div>
+     </div>
+  
+	      <div class="thirddisplay">
+		 <a href="">صوت وصورة</a>
+		 <div class="sembeded">
+			 <div>
+				 <a href=""><p>
+أغنى رجل في العالم يفقد حوالي 14 مليار دولار </p></a>
+			<img src="vieillissement-768x512.jpg">
+       </div>
+			  <div>
+				  <a href=""><p>
+أغنى رجل في العالم يفقد حوالي 14 مليار دولار </p></a>
+			<img width="50px" src="king_M6-768x512.jpeg">
+       </div> <div>
+			 <a href=""><p>
+أغنى رجل في العالم يفقد حوالي 14 مليار دولار </p></a>
+			<img src="Unites_medicales_a_Safi-768x512.jpg">
+       </div> <div>
+			 <a href=""><p>
+أغنى رجل في العالم يفقد حوالي 14 مليار دولار </p></a>
+			<img src="king_M6-768x512.jpeg">
+       </div>
+			  <div>
+				  <a href=""><p>
+أغنى رجل في العالم يفقد حوالي 14 مليار دولار </p></a>
+			<img src="hachmi_nouira-768x512.jpg">
+       </div>
+			  <div>
+				  <a href=""><p>
+أغنى رجل في العالم يفقد حوالي 14 مليار دولار </p></a>
+			<img src="vaccin-800-10-768x513.jpg">
+       </div> <div>
+			 <a href=""><p>
+أغنى رجل في العالم يفقد حوالي 14 مليار دولار </p></a>
+			<img src="king_M6-768x512.jpeg">
+       </div> <div>
+			 <a href=""><p>
+أغنى رجل في العالم يفقد حوالي 14 مليار دولار </p></a>
+			<img src="Unites_medicales_a_Safi-768x512.jpg">
+       </div>
+		 </div>
+    </div>
+	  
+	  <div class="forthdisplay">
+		  
+		  <div class="fitems"><h2>صورة بألف كلمة</h2><img 
+	width="100%" src="ARCH-768x512.jpg"></div>
+		  
+		  
+		  
+		  <div class="cont"><h2>طالع/ نازل</h2><div class="grid"><div class="lala"><div><img src="lamamra.jpg"></div><div class="lefind"><h3>
+فرحات مهني</h3><div>لاية بومرداس، ولاية تيزي وزو، ولاية بجاية، ولاية البويرة، ولاية المدية، ولاية برج بوعريريج، ولاية سطيف، ولاية جيجل، ولاية ميلة، غرب ولاية سكيكدة.. كلها ولايات تقع تحت “الاحتلال” الجزائري، حيث يعاني شعب القبايل الويلات مع “الحكرة” و”القمع”؛ لكن المغرب اختار أخيرا الدفاع عن المظلومين أمام المنتظم الدولي، فكان من الطبيعي</div></div></div>
+		<div class="lala"><div><img src="lamamra.jpg"></div><div class="lefind"><h3>
+فرحات مهني</h3><div>لاية بومرداس، ولاية تيزي وزو، ولاية بجاية، ولاية البويرة، ولاية المدية، ولاية برج بوعريريج، ولاية سطيف، ولاية جيجل، ولاية ميلة، غرب ولاية سكيكدة.. كلها ولايات تقع تحت “الاحتلال” الجزائري، حيث يعاني شعب القبايل الويلات مع “الحكرة” و”القمع”؛ لكن المغرب اختار أخيرا الدفاع عن المظلومين أمام المنتظم الدولي، فكان من الطبيعي</div></div></div></div></div>
+		  
+		  
+		  
+		  <div class="thtems"><h2>كاريكاتير اليوم</h2><img 	width="100%" src="caricature-elections-768x512.jpg"></div>
+		  
+    </div>
+	  <footer>
+		  <div class="flast">
+			  <div class="ylast">
+			  <h2>النشرة الإخبارية</h2>
+			  <p>اشترك الآن في النشرة البريدية لجريدة هسبريس، لتصلك آخر الأخبار يوميا</p>
+				  <div  class="put">
+					 <form  autocomplete="on">
+					 <input type="email" id="mail"  autofocus >
+					  <input type="submit" value="اشترك"  id="mail">
+				 </form>
+				</div>
+			  </div>
+			  <div class="blast">
+				  <h2>‫حمل تطبيق هسبريس</h2>
+			  <p>ولا تنسى تفعيل الإشعارات للتوصل بآخر المستجدات!</p>
+				  		  <div class="last">
+			  <div><img width="90%" src="asset 1.png"></div>
+			  <div><img width="90%" src="asset 2.png"></div>
+			  <div><img width="90%" src="asset 3.png"></div>
+		  </div>
+			  </div>
+		  </div>
+<div class="slast">
+	<div  class="tlast">
+	<div  class="rlast">
+		<img  width="100%" src="logo.svg"></div>
+		<div class="savicons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+   
+		</div>
+	  <div  class="jlast">
+		<ul>
+			<li><h3>
+هسبريس</h3></li>
+			<li>للنشر في هسبريس</li>
+			<li>اتصل بنا</li>
+			<li>للإشهار</li>
+			<li>شروط الاستخدام</li>
+			<li>فريق العمل</li>
+			<li>مدونات</li>
+		</ul>
+   </div>
+	</div>
+	  </footer>
+	</body>
+</html>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 6000); // Change image every 5 seconds
+}
+//# sourceURL=userscript.js
+</script>
+</body>
+</html>
